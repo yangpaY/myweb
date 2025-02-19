@@ -4,10 +4,10 @@ function toggleTheme() {
     
     if (body.classList.contains('light-mode')) {
         body.classList.remove('light-mode');
-        button.textContent = '라이트 모드로 변경';
+        button.textContent = '☀️';
     } else {
         body.classList.add('light-mode');
-        button.textContent = '다크 모드로 변경';
+        button.textContent = '🌙';
     }
 }
 
