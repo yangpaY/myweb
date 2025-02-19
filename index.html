@@ -3,39 +3,53 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>양파 | 개발자 소개</title>
+    <title>류한준 | 포트폴리오</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <h1>양파 (류한준)</h1>
-        <p>Highschool student & Discord bot Developer</p>
-    </header>
+    <div class="container">
+        <div class="section" id="introduction">
+            <img src="yangpa.png" alt="Profile" class="profile-img">
+            <h2 class="section-title">Introduction</h2>
+            <h1 class="name">류한준</h1>
+            <p class="nickname">양파</p>
+            <p class="description">대한민국 고등학생 & 디스코드 봇 개발자</p>
+            <p class="sub-description">Korean High School Student & Discord Bot Developer</p>
+        </div>
 
-    <section class="about">
-        <icon>😁</icon>
-        <h2>Introduction</h2>
-        <p>안녕하세요! 저는 <strong>양파 (류한준)</strong>에요!
-        주로 <strong>Python</strong>을 사용하여 <strong>Discord 봇</strong>을 개발하고 있어요!
-        개발할 때는 <strong>Visual Studio Code</strong>를 사용해요.</p>
-    </section>
+        <div class="section" id="projects">
+            <h2 class="section-title">Projects</h2>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <h3>디스코드 봇 제작</h3>
+                    <p>Python을 이용하여 디스코드 봇 '관리봇' 제작중.
+                    </p>
+                    <div class="project-status">진행 중</div>
+                </div>
+            </div>
+        </div>
 
-    <section class="project">
-        <icon>🛠️</icon>
-        <h2>Project</h2>
-        <p>Discord봇 제작: <strong>진행중</strong></p>
-        <p>Website제작: <strong>진행중</strong></p>
-    </section>
- 
-    <section class="contact">
-        <icon>☎️</icon>
-        <h2>Contact</h2>
-        <p>Discord: <strong>yangpa_y</strong></p>
-        <p>E-mail: <strong>yangpa_y@naver.com</strong></p>
-    </section>
+        <div class="section" id="contact">
+            <h2 class="section-title">Contact</h2>
+            <div class="contact-info">
+                <div class="contact-item">
+                    <span class="contact-label">Discord:</span>
+                    <span class="contact-value">yangpa_y</span>
+                </div>
+                <div class="contact-item">
+                    <span class="contact-label">Email:</span>
+                    <span class="contact-value">yangpa_y@naver.com</span>
+                </div>
+            </div>
+        </div>
 
-    <footer>
-        <p>&copy; 2025 양파. All rights reserved.</p>
-    </footer>
+        <button class="theme-toggle" onclick="toggleTheme()">
+            라이트 모드로 변경
+        </button>
+
+        <p class="copyright">© 2024 류한준. All rights reserved.</p>
+    </div>
+
+    <script src="index.js"></script>
 </body>
 </html>
