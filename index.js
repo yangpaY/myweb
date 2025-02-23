@@ -4,10 +4,10 @@ function toggleTheme() {
     
     if (body.classList.contains('light-mode')) {
         body.classList.remove('light-mode');
-        button.textContent = 'Light Mode';
+        button.innerHTML = '<i class="fas fa-sun"></i>';
     } else {
         body.classList.add('light-mode');
-        button.textContent = 'Dark Mode';
+        button.innerHTML = '<i class="fas fa-moon"></i>';
     }
 }
 

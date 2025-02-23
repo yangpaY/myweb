@@ -207,18 +207,24 @@ body.light-mode .social-link {
 }
 
 .theme-toggle {
-    padding: 0.8rem 1.5rem;
+    width: 50px;
+    height: 50px;
     border: none;
-    border-radius: 25px;
+    border-radius: 50%;
     background-color: #444;
     color: white;
     cursor: pointer;
     transition: all 0.3s ease;
-    margin-top: 2rem;
-
-position: fixed;
-    bottom: 20px; /* 하단으로부터 20px 떨어짐 */
-    right: 20px;  /* 오른쪽으로부터 20px 떨어짐 */
+    
+    /* 오른쪽 하단 고정 위치 설정 */
+    position: fixed;
+    bottom: 2rem;  /* 아래에서의 여백 */
+    right: 2rem;   /* 오른쪽에서의 여백 */
+    
+    /* 내부 컨텐츠 중앙 정렬 */
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 .theme-toggle:hover {
     background-color: #666;
