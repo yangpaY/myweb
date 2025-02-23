@@ -215,8 +215,11 @@ body.light-mode .social-link {
     cursor: pointer;
     transition: all 0.3s ease;
     margin-top: 2rem;
-}
 
+position: fixed;
+    bottom: 20px; /* 하단으로부터 20px 떨어짐 */
+    right: 20px;  /* 오른쪽으로부터 20px 떨어짐 */
+}
 .theme-toggle:hover {
     background-color: #666;
 }
