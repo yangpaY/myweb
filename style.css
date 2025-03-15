@@ -233,6 +233,99 @@ body {
     color: var(--accent-color);
 }
 
+/* 경력 타임라인 스타일 */
+.experience-timeline {
+    position: relative;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px 0;
+}
+
+.experience-timeline::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 120px;
+    width: 2px;
+    background-color: rgba(100, 255, 218, 0.2);
+}
+
+.experience-item {
+    position: relative;
+    display: flex;
+    margin-bottom: 2.5rem;
+}
+
+.experience-date {
+    width: 100px;
+    padding-right: 20px;
+    text-align: right;
+    font-weight: 600;
+    color: var(--accent-color);
+    flex-shrink: 0;
+}
+
+.experience-content {
+    position: relative;
+    padding-left: 40px;
+    flex-grow: 1;
+}
+
+.experience-content::before {
+    content: '';
+    position: absolute;
+    left: -6px;
+    top: 10px;
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    background-color: var(--accent-color);
+    box-shadow: 0 0 0 4px rgba(100, 255, 218, 0.2);
+}
+
+.experience-title {
+    margin: 0 0 0.5rem;
+    font-size: 1.3rem;
+}
+
+.experience-position {
+    margin: 0 0 1rem;
+    font-size: 1.1rem;
+    color: var(--text-secondary);
+    font-style: italic;
+}
+
+.experience-description {
+    margin: 0;
+    line-height: 1.6;
+}
+
+/* 반응형 조정 */
+@media (max-width: 768px) {
+    .experience-timeline::before {
+        left: 30px;
+    }
+    
+    .experience-item {
+        flex-direction: column;
+    }
+    
+    .experience-date {
+        width: auto;
+        text-align: left;
+        padding: 0 0 0.5rem 50px;
+    }
+    
+    .experience-content {
+        padding-left: 50px;
+    }
+    
+    .experience-content::before {
+        left: 24px;
+    }
+}
+
 /* Empty Message Styles */
 .empty-message {
     display: flex;

@@ -26,6 +26,10 @@
                 <button class="action-button" onclick="openTab('portfolio')">
                     <i class="fas fa-briefcase"></i> 포트폴리오 보기
                 </button>
+                <button class="action-button" onclick="openTab('experience')">
+                    <i class="fas fa-history"></i> 경력 사항
+                </button>
+            </div>
             </div>
         </div>
 
@@ -94,7 +98,34 @@
             </div>
         </div>
         -->
+        <!-- 경력 탭 -->
+        <div id="experience-tab" class="content-tab">
+            <div class="tab-header">
+                <h2>경력 사항</h2>
+                <button class="close-tab" onclick="closeTab('experience')">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+    
+        <div class="experience-timeline">
+            <!-- 경력이 없을 경우 표시할 메시지 -->
+            <div class="empty-message">
+                <i class="fas fa-briefcase"></i>
+                <p>아직 등록된 경력 사항이 없어요.</p>
+            </div>
         
+        <!--
+        <div class="experience-item">
+            <div class="experience-date">2024 - 현재</div>
+            <div class="experience-content">
+                <h3 class="experience-title">회사/기관명</h3>
+                <p class="experience-position">직책/역할</p>
+                <p class="experience-description">담당 업무 및 성과에 대한 설명...</p>
+            </div>
+        </div>
+        -->
+    </div>
+</div>
         <div id="portfolio-tab" class="content-tab">
             <div class="tab-header">
                 <h2>포트폴리오</h2>

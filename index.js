@@ -61,3 +61,30 @@ function openTab(tabName) {
 function closeTab(tabName) {
     document.getElementById(`${tabName}-tab`).style.display = 'none';
 }
+
+function addExperienceItem(dateRange, company, position, description) {
+    const timelineContainer = document.querySelector('.experience-timeline');
+    const emptyMessage = timelineContainer.querySelector('.empty-message');
+    
+    // 비어있음 메시지 숨기기
+    if (emptyMessage) {
+        emptyMessage.style.display = 'none';
+    }
+    
+    // 새 경력 아이템 생성
+    const experienceItem = document.createElement('div');
+    experienceItem.className = 'experience-item';
+    
+    // 경력 내용 구성
+    experienceItem.innerHTML = `
+        <div class="experience-date">${dateRange}</div>
+        <div class="experience-content">
+            <h3 class="experience-title">${company}</h3>
+            <p class="experience-position">${position}</p>
+            <p class="experience-description">${description}</p>
+        </div>
+    `;
+    
+    // 타임라인에 추가
+    timelineContainer.appendChild(experienceItem);
+}
