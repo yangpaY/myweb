@@ -26,9 +26,6 @@
                 <button class="action-button" onclick="openTab('portfolio')">
                     <i class="fas fa-briefcase"></i> 포트폴리오 보기
                 </button>
-                <button class="action-button" onclick="openTab('experience')">
-                    <i class="fas fa-history"></i> 경력 사항
-                </button>
             </div>
         </div>
 
@@ -78,6 +75,31 @@
         </div>
 
         <!-- 포트폴리오 탭 -->
+        <!-- 
+        포트폴리오 섹션: 나중에 내용을 추가할 수 있도록 주석으로 구조만 남겨둠
+        이 주석을 제거하고 아래 코드를 활성화하면 포트폴리오 섹션이 작동합니다.
+        
+        실제 포트폴리오 항목을 추가할 때는 아래 구조를 참고하세요:
+        
+        <div class="portfolio-item">
+            <div class="portfolio-header">
+                <h3>포트폴리오 제목</h3>
+                <span class="portfolio-date">2025</span>
+            </div>
+            <p>포트폴리오 설명 내용</p>
+            <div class="portfolio-preview">
+                <img src="경로/이미지.jpg" alt="포트폴리오 미리보기">
+            </div>
+            <div class="portfolio-links">
+                <a href="#" target="_blank" class="portfolio-link">
+                    <i class="fas fa-link"></i> 프로젝트 보기
+                </a>
+                <a href="#" target="_blank" class="portfolio-link">
+                    <i class="fab fa-github"></i> 소스코드
+                </a>
+            </div>
+        </div>
+        -->
         <div id="portfolio-tab" class="content-tab">
             <div class="tab-header">
                 <h2>포트폴리오</h2>
@@ -92,56 +114,6 @@
                     <i class="fas fa-briefcase"></i>
                     <p>아직 완성된 포트폴리오가 없어요.</p>
                 </div>
-                
-                <!-- 포트폴리오 아이템 예시 (주석 처리)
-                <div class="portfolio-item">
-                    <div class="portfolio-header">
-                        <h3>포트폴리오 제목</h3>
-                        <span class="portfolio-date">2025</span>
-                    </div>
-                    <p>포트폴리오 설명 내용</p>
-                    <div class="portfolio-preview">
-                        <img src="경로/이미지.jpg" alt="포트폴리오 미리보기">
-                    </div>
-                    <div class="portfolio-links">
-                        <a href="#" target="_blank" class="portfolio-link">
-                            <i class="fas fa-link"></i> 프로젝트 보기
-                        </a>
-                        <a href="#" target="_blank" class="portfolio-link">
-                            <i class="fab fa-github"></i> 소스코드
-                        </a>
-                    </div>
-                </div>
-                -->
-            </div>
-        </div>
-
-        <!-- 경력 탭 -->
-        <div id="experience-tab" class="content-tab">
-            <div class="tab-header">
-                <h2>경력 사항</h2>
-                <button class="close-tab" onclick="closeTab('experience')">
-                    <i class="fas fa-times"></i>
-                </button>
-            </div>
-    
-            <div class="experience-timeline">
-                <!-- 경력이 없을 경우 표시할 메시지 -->
-                <div class="empty-message">
-                    <i class="fas fa-briefcase"></i>
-                    <p>아직 등록된 경력 사항이 없어요.</p>
-                </div>
-                
-                <!-- 경력
-                <div class="experience-item">
-                    <div class="experience-date">2024 - 현재</div>
-                    <div class="experience-content">
-                        <h3 class="experience-title">회사/기관명</h3>
-                        <p class="experience-position">직책/역할</p>
-                        <p class="experience-description">담당 업무 및 성과에 대한 설명...</p>
-                    </div>
-                </div>
-                -->
             </div>
         </div>
 
